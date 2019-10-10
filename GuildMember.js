@@ -4,23 +4,23 @@ module.exports = Structures.extend("GuildMember", GuildMember => class LazyV12Gu
     }
 
     addRole (id, reason='') {
-        return this.roles.add(id, reason='');
+        return this.roles.add(id, reason);
     }
 
     addRoles (id, reason='') {
-        return this.roles.add(id, reason='');
+        return this.roles.add(id, reason);
     }
 
     removeRole (id, reason='') {
-        return this.roles.remove(id, reason='');
+        return this.roles.remove(id, reason);
     }
 
     removeRoles (id, reason='') {
-        return this.roles.remove(id, reason='');
+        return this.roles.remove(id, reason);
     }
 
     setRoles (id, reason='') {
-        return this.roles.set(id, reason='');
+        return this.roles.set(id, reason);
     }
 
     hasPermission (perm, _, checkAdmin=true, checkOwner=true) {
